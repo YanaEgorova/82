@@ -1,0 +1,52 @@
+.about__wrapper {
+  background-color: rgba(225, 40, 54, .2);
+}
+.about  {
+}
+.about .img {
+  margin-bottom: 4rem;
+}
+.about .list {
+  text-align: left;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 4rem;
+}
+.about .text {
+  display: inline-block;
+  position: relative;
+}
+.about .text::before {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 0;
+  left: -4rem;
+  display: block;
+  content: '';
+  background-image: url('../img/check.svg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 1024px) {
+
+  .about {
+   text-align: left;
+  }
+  .about__block {
+    display: flex;
+    align-items: center;
+  }
+  .about .img {
+    margin: 0;
+    margin-right: 2rem;
+  }
+  .about .list {
+    width: 50%;
+  }
+  .about .item:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
